@@ -1,0 +1,228 @@
+/* ===================================================
+   SecureShell - main stylesheet
+   The ONLY stylesheet for this site (assets/css/style.css)
+   Minimalist pass: light backgrounds, generous whitespace,
+   one accent colour used sparingly and on purpose.
+   =================================================== */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colour system: navy (#16324f) + warm brass accent (#b08968),
+   plus black/white/grey - used directly throughout this file */
+
+/* Base typography */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif; /* body font */
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.65;
+  background-color: #ffffff;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif; /* heading font */
+  color: #16324f;
+  font-weight: normal; /* let size, not boldness, carry the hierarchy */
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.3em;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-top: 1.5em;
+}
+
+h3 {
+  font-size: 1.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #b08968;
+}
+
+p {
+  margin-bottom: 1em;
+  max-width: 68ch; /* comfortable line length */
+}
+
+/* Links (tag selector + descendant selector + pseudo-class) */
+a {
+  color: #b08968;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-bottom-color: #b08968;
+}
+
+a:visited {
+  color: #16324f;
+}
+
+/* ===================== Header ===================== */
+#site_header {
+  background-color: #16324f;
+  border-bottom: 3px solid #b08968;
+  padding: 1.1em 2em;
+}
+
+#site_header .site_name {
+  font-family: Georgia, serif;
+  color: #ffffff;
+  font-size: 1.9em;
+  font-weight: normal;
+  letter-spacing: 0.015em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#site_header .tagline {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 0.85em;
+  color: #b08968;
+  margin: 0.2em 0 0 2.7em; /* aligns under the wordmark, past the logo */
+  letter-spacing: 0.02em;
+}
+
+#site_header img {
+  height: 38px;
+  vertical-align: middle;
+  margin-right: 0.6em;
+}
+
+/* ===================== Navigation ===================== */
+#main_nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  overflow: hidden; /* clear the floated list items */
+}
+
+#main_nav ul {
+  list-style: none;
+  padding-left: 0.6em; /* offsets the link's own padding so text lines up with header/main at 2em */
+}
+
+/* descendant selector: nav a */
+#main_nav a {
+  display: block;
+  padding: 1em 1.1em;
+  color: #374151;
+  font-size: 0.9em;
+  letter-spacing: 0.02em;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+#main_nav li {
+  float: left; /* horizontal menu via float */
+}
+
+/* hover effect on nav links - underline, not a colour block, stays minimal */
+#main_nav a:hover {
+  color: #b08968;
+  border-bottom-color: #b08968;
+}
+
+/* ===================== Layout: main / section / aside ===================== */
+main {
+  overflow: hidden; /* contain the floats below */
+  padding: 2.5em 2em;
+}
+
+/* Aside/sidebar sits on the LEFT, content on the RIGHT, per the layout diagram */
+#sidebar {
+  float: left;
+  width: 26%;
+  padding: 1em 1.5em 1em 1em;
+  border-right: 1px solid #e5e7eb;
+  background-color: #faf6f0;
+}
+
+#content {
+  float: right;
+  width: 74%;
+  padding-left: 2.5em;
+}
+
+#sidebar h2 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #9ca3af;
+  margin-top: 0;
+}
+
+#sidebar ol,
+#sidebar ul {
+  margin-left: 1.1em;
+}
+
+#sidebar li {
+  margin-bottom: 0.6em;
+}
+
+/* Table on the About page */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0 2em;
+}
+
+th, td {
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75em 0.5em;
+  text-align: left;
+}
+
+th {
+  background-color: transparent;
+  color: #16324f;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: normal;
+  border-bottom: 2px solid #b08968;
+}
+
+/* Home page hero image */
+.hero_image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+
+figcaption {
+  font-size: 0.85em;
+  color: #9ca3af;
+}
+
+/* ===================== Callout boxes (repetition across lessons/quiz) ===================== */
+.callout {
+  background-color: #faf6f0;
+  border-left: 2px solid #b08968;
+  padding: 1em 1.3em;
+  margin: 1em 0 1.5em;
+  max-width: 68ch;
+}
+
+/* ===================== Footer ===================== */
+#foot {
+  clear: both;
+  background-color: #16324f;
+  color: #cbd5e1;
+  text-align: center;
+  font-size: 0.85em;
+  padding: 2em 1em;
+  border-top: 3px solid #b08968;
+}
