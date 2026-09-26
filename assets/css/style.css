@@ -7,39 +7,39 @@
   box-sizing: border-box;
 }
 
-
 /* Colors */
 
 /* Base typography */
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 16px;
-  color: #374151;
+  color: #333333;
   line-height: 1.65;
-  background-color: #ffffff;
+  background-color: #FCF4ED;
 }
 
 h1, h2, h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  color: #16324f;
-  font-weight: normal;
+  font-family: "Times New Roman", Times, serif;
+  color: #4B3F91;
+  font-weight: bold;
   margin-bottom: 0.5em;
 }
 
 h1 {
-  font-size: 2.3em;
+  font-size: 2.8em;
   letter-spacing: -0.01em;
+  color: #2F1F66;
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.6em;
   margin-top: 1.5em;
 }
 
 h3 {
-  font-size: 1.05em;
+  font-size: 1.25em;
   letter-spacing: 0.04em;
-  color: #b08968;
+  color: #C9705B;
 }
 
 p {
@@ -49,23 +49,23 @@ p {
 
 /* Links */
 a {
-  color: #b08968;
+  color: #7A6BC9;
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }
 
 a:hover {
-  border-bottom-color: #b08968;
+  border-bottom-color: #C9705B;
 }
 
 a:visited {
-  color: #16324f;
+  color: #4B3F91;
 }
 
 /* ===================== Header ===================== */
 #site_header {
-  background-color: #16324f;
-  border-bottom: 3px solid #b08968;
+  background-color: #5D518C;
+  border-bottom: 4px solid #E6A775;
   padding: 0.6em 2em;
   display: flex;
   align-items: center;
@@ -73,7 +73,7 @@ a:visited {
 }
 
 #site_header .site_name {
-  font-family: Georgia, serif;
+  font-family: "Courier New", Courier, monospace;
   color: #ffffff;
   font-size: 1.5em;
   font-weight: normal;
@@ -82,10 +82,10 @@ a:visited {
 }
 
 #site_header .tagline {
-  font-family: Georgia, serif;
+  font-family: "Courier New", Courier, monospace;
   font-style: italic;
   font-size: 0.8em;
-  color: #b08968;
+  color: #F3EFFF;
   margin: 0 0 0 0.9em;
   letter-spacing: 0.02em;
 }
@@ -99,7 +99,7 @@ a:visited {
 
 /* Navigation */
 #main_nav {
-  background-color: #ffffff;
+  background-color: #F3EFFF;
   border-bottom: 1px solid #e5e7eb;
   overflow: hidden;
 }
@@ -110,9 +110,10 @@ a:visited {
 }
 
 #main_nav a {
+  font-family: "Courier New", Courier, monospace;
   display: block;
   padding: 1em 1.1em;
-  color: #374151;
+  color: #4B3F91;
   font-size: 0.9em;
   letter-spacing: 0.02em;
   border-bottom: 2px solid transparent;
@@ -124,8 +125,8 @@ a:visited {
 }
 
 #main_nav a:hover {
-  color: #b08968;
-  border-bottom-color: #b08968;
+  color: #C9705B;
+  border-bottom-color: #C9705B;
 }
 
 /* Layout */
@@ -138,8 +139,8 @@ main {
   float: left;
   width: 26%;
   padding: 1em 1.5em 1em 1em;
-  border-right: 1px solid #e5e7eb;
-  background-color: #faf6f0;
+  border-right: 1px solid #C9705B;
+  background-color: #FCF5FF;
 }
 
 #content {
@@ -151,7 +152,7 @@ main {
 #sidebar h2 {
   font-size: 0.8em;
   letter-spacing: 0.06em;
-  color: #9ca3af;
+  color: #6b7280;
   margin-top: 0;
 }
 
@@ -178,8 +179,8 @@ th, td {
 }
 
 th {
-  color: #16324f;
-  border-bottom: 2px solid #b08968;
+  color: #4B3F91;
+  border-bottom: 2px solid #C9705B;
 }
 
 /* Home page hero image */
@@ -192,13 +193,13 @@ th {
 
 figcaption {
   font-size: 0.85em;
-  color: #9ca3af;
+  color: #6b7280;
 }
 
 /* Callouts */
 .callout {
-  background-color: #faf6f0;
-  border-left: 2px solid #b08968;
+  background-color: #EAF7FB;
+  border-left: 2px solid #C9705B;
   padding: 1em 1.3em;
   margin: 1em 0 1.5em;
   max-width: 68ch;
@@ -210,11 +211,12 @@ figcaption {
 
 /* Footer */
 #foot {
+  font-family: "Courier New", Courier, monospace;
   clear: both;
-  background-color: #16324f;
-  color: #cbd5e1;
+  background-color: #5D518C;
+  color: #F3EFFF;
   text-align: center;
   font-size: 0.85em;
   padding: 2em 1em;
-  border-top: 3px solid #b08968;
+  border-top: 4px solid #E6A775;
 }
