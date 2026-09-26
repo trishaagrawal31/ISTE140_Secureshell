@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-html{  
-height: 100%
-/*page will fill full height*/
-}
-
 
 /* Colors */
 
@@ -22,9 +17,6 @@ body {
   color: #374151;
   line-height: 1.65;
   background-color: #ffffff;
-  min_height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 h1, h2, h3 {
@@ -140,7 +132,6 @@ a:visited {
 main {
   overflow: hidden;
   padding: 2.5em 2em;
-  flex: 1;
 }
 
 #sidebar {
